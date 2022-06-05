@@ -49,10 +49,12 @@ class UserListObserver: UserDetailsObserver {
             }
         }
     }
-    
+    // MARK: Business Logic
     func getUserList() {
-        NetworkServiceHandler.shared.request(route: .user, type: [User].self) { result in
-            self.notifyObserver(with: result)
-        }
+        NetworkServiceHandler.shared.request(
+            route: .user,
+            type: [User].self,
+            completion: notifyObserver
+        )
     }
 }

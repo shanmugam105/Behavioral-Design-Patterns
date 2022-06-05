@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		041882C7284CADBF00F10A3B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041882C6284CADBF00F10A3B /* UIViewController+Extension.swift */; };
 		044719AB284B7AE600306C31 /* UserListObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044719AA284B7AE600306C31 /* UserListObserver.swift */; };
+		049A1EB7284CC8B300073317 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1EB6284CC8B200073317 /* DetailsViewController.swift */; };
 		049A1EC9284A694C00B60CDB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1EC7284A694C00B60CDB /* User.swift */; };
 		049A1ECA284A694C00B60CDB /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1EC8284A694C00B60CDB /* PostDetail.swift */; };
 		049A1ED7284A69AE00B60CDB /* LocalErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1ED0284A69AE00B60CDB /* LocalErrors.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		041882C6284CADBF00F10A3B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		044719AA284B7AE600306C31 /* UserListObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListObserver.swift; sourceTree = "<group>"; };
+		049A1EB6284CC8B200073317 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		049A1EC7284A694C00B60CDB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		049A1EC8284A694C00B60CDB /* PostDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
 		049A1ED0284A69AE00B60CDB /* LocalErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalErrors.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				049A1EC6284A694C00B60CDB /* Model */,
 				04E1E6F9284A60810057A9F2 /* AppDelegate.swift */,
 				04E1E6FD284A60810057A9F2 /* HomeViewController.swift */,
+				049A1EB6284CC8B200073317 /* DetailsViewController.swift */,
 				044719AA284B7AE600306C31 /* UserListObserver.swift */,
 				04E1E6FF284A60810057A9F2 /* Main.storyboard */,
 				049A1EC4284A60B200B60CDB /* Global */,
@@ -202,6 +205,7 @@
 				049A1ED7284A69AE00B60CDB /* LocalErrors.swift in Sources */,
 				049A1ECA284A694C00B60CDB /* PostDetail.swift in Sources */,
 				049A1EDA284A69AE00B60CDB /* Route.swift in Sources */,
+				049A1EB7284CC8B300073317 /* DetailsViewController.swift in Sources */,
 				04E1E6FE284A60810057A9F2 /* HomeViewController.swift in Sources */,
 				04E1E6FA284A60810057A9F2 /* AppDelegate.swift in Sources */,
 				049A1ED9284A69AE00B60CDB /* HTTPMethod.swift in Sources */,

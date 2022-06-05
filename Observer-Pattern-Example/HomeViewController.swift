@@ -18,7 +18,9 @@ class HomeViewController: UITableViewController {
     
     private func configureView() {
         title = "Users"
+        // Subscription
         userListObserver.addObserver(observer: self)
+        // Business logic
         userListObserver.getUserList()
     }
 }
@@ -44,5 +46,11 @@ extension HomeViewController {
         let cell = UITableViewCell()
         cell.textLabel?.text = userListObserver.users?[indexPath.row].name
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+        vc.name = userListObserver.users?[indexPath.row].name
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
