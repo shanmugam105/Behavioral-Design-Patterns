@@ -8,22 +8,9 @@
 
 import Foundation
 
-protocol NetworkObservable {
-    func updateResult()
-    func updateError()
-}
-
-protocol NetworkObserver {
-    var observers: [NetworkObservable] { get set }
-    func addObserver(observer: NetworkObservable)
-    func removeObserver(observer: NetworkObservable)
-    func notifyObserver(with result: Result<Codable, Error>)
-}
-
 class NetworkServiceHandler: NSObject {
     static let shared = NetworkServiceHandler()
     private override init() {}
-    var observers: [NetworkObservable] = []
     
     func request<T: Codable>(route: Route,
                              method: HTTPMethod = .GET,

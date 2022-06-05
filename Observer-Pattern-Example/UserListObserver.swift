@@ -7,18 +7,49 @@
 
 import Foundation
 
-class UserListObserver: NetworkObserver {
-    var observers: [NetworkObservable] = []
+protocol UserDetailsObservable: AnyObject {
+    func updateResult()
+    func updateError(error: Error)
+}
+
+protocol UserDetailsObserver: AnyObject {
+    var observers: [UserDetailsObservable] { get set }
+    func addObserver(observer: UserDetailsObservable)
+    func removeObserver(observer: UserDetailsObservable)
+    func notifyObserver(with result: Result<[User], Error>)
+}
+
+class UserListObserver: UserDetailsObserver {
+    var observers: [UserDetailsObservable] = []
     
-    func addObserver(observer: NetworkObservable) {
-        
+    var users: [User]?
+    
+    func addObserver(observer: UserDetailsObservable) {
+        observers.append(observer)
     }
     
-    func removeObserver(observer: NetworkObservable) {
-        
+    func removeObserver(observer: UserDetailsObservable) {
+        if let idx = observers.firstIndex(where: { $0 === observer }) {
+            observers.remove(at: idx)
+            print("-> ","\(String(describing: observer.self)) removed.")
+        }
     }
     
     func notifyObserver(with result: Result<[User], Error>) {
-        
+        observers.forEach { observable in
+            switch result {
+            case .success(let users):
+                self.users = users
+                observable.updateResult()
+            case .failure(let error):
+                observable.updateError(error: error)
+            }
+        }
+    }
+    
+    func getUserList() {
+        NetworkServiceHandler.shared.request(route: .user, type: [User].self) { result in
+            self.notifyObserver(with: result)
+        }
     }
 }

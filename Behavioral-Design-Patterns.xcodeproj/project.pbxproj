@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041882C7284CADBF00F10A3B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041882C6284CADBF00F10A3B /* UIViewController+Extension.swift */; };
 		044719AB284B7AE600306C31 /* UserListObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044719AA284B7AE600306C31 /* UserListObserver.swift */; };
 		049A1EC9284A694C00B60CDB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1EC7284A694C00B60CDB /* User.swift */; };
 		049A1ECA284A694C00B60CDB /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1EC8284A694C00B60CDB /* PostDetail.swift */; };
@@ -14,7 +15,6 @@
 		049A1ED8284A69AE00B60CDB /* NetworkServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1ED2284A69AE00B60CDB /* NetworkServiceHandler.swift */; };
 		049A1ED9284A69AE00B60CDB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1ED3284A69AE00B60CDB /* HTTPMethod.swift */; };
 		049A1EDA284A69AE00B60CDB /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1ED4284A69AE00B60CDB /* Route.swift */; };
-		049A1EDB284A69AE00B60CDB /* UserDetails+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1ED5284A69AE00B60CDB /* UserDetails+Protocol.swift */; };
 		04E1E6FA284A60810057A9F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E6F9284A60810057A9F2 /* AppDelegate.swift */; };
 		04E1E6FE284A60810057A9F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E6FD284A60810057A9F2 /* HomeViewController.swift */; };
 		04E1E701284A60810057A9F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E1E6FF284A60810057A9F2 /* Main.storyboard */; };
@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041882C6284CADBF00F10A3B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		044719AA284B7AE600306C31 /* UserListObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListObserver.swift; sourceTree = "<group>"; };
 		049A1EC7284A694C00B60CDB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		049A1EC8284A694C00B60CDB /* PostDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		049A1ED2284A69AE00B60CDB /* NetworkServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceHandler.swift; sourceTree = "<group>"; };
 		049A1ED3284A69AE00B60CDB /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		049A1ED4284A69AE00B60CDB /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		049A1ED5284A69AE00B60CDB /* UserDetails+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDetails+Protocol.swift"; sourceTree = "<group>"; };
 		04E1E6F6284A60800057A9F2 /* Observer-Pattern-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Observer-Pattern-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E1E6F9284A60810057A9F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E1E6FD284A60810057A9F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +54,7 @@
 		049A1EC4284A60B200B60CDB /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				041882C6284CADBF00F10A3B /* UIViewController+Extension.swift */,
 				04E1E702284A60850057A9F2 /* Assets.xcassets */,
 				04E1E704284A60850057A9F2 /* LaunchScreen.storyboard */,
 				04E1E707284A60850057A9F2 /* Info.plist */,
@@ -75,7 +76,6 @@
 			children = (
 				049A1ECE284A69AE00B60CDB /* Input Validation */,
 				049A1ED1284A69AE00B60CDB /* Network Service */,
-				049A1ED5284A69AE00B60CDB /* UserDetails+Protocol.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -201,13 +201,13 @@
 			files = (
 				049A1ED7284A69AE00B60CDB /* LocalErrors.swift in Sources */,
 				049A1ECA284A694C00B60CDB /* PostDetail.swift in Sources */,
-				049A1EDB284A69AE00B60CDB /* UserDetails+Protocol.swift in Sources */,
 				049A1EDA284A69AE00B60CDB /* Route.swift in Sources */,
 				04E1E6FE284A60810057A9F2 /* HomeViewController.swift in Sources */,
 				04E1E6FA284A60810057A9F2 /* AppDelegate.swift in Sources */,
 				049A1ED9284A69AE00B60CDB /* HTTPMethod.swift in Sources */,
 				049A1EC9284A694C00B60CDB /* User.swift in Sources */,
 				049A1ED8284A69AE00B60CDB /* NetworkServiceHandler.swift in Sources */,
+				041882C7284CADBF00F10A3B /* UIViewController+Extension.swift in Sources */,
 				044719AB284B7AE600306C31 /* UserListObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
