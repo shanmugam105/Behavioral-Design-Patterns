@@ -20,6 +20,9 @@ protocol UserDetailsObserver: AnyObject {
 }
 
 class UserListObserver: UserDetailsObserver {
+    static let shared = UserListObserver()
+    private init() {}
+    
     var observers: [UserDetailsObservable] = []
     
     var users: [User]?

@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UITableViewController {
 
-    let userListObserver: UserListObserver = UserListObserver()
+    let userListObserver: UserListObserver = .shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
